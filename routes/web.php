@@ -30,7 +30,12 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route ::get('/', 'HomeController@index');
-Route ::get('/greeting/{name}','HomeController@greeting');
-Route ::get('/user',"UserController@index");
-Route ::get('/user/show/{id}',"UserComtroller@show");
-Route ::get('/user/update/{1}',"UserController@update");
+// Route ::get('/greeting/{name}','HomeController@greeting');
+// Route ::get('/user',"UserController@index");
+// Route ::get('/user/show/{id}',"UserComtroller@show");
+// Route ::get('/user/update/{1}',"UserController@update");
+
+
+Route ::get('/todo',"TodoController@index");
+Route ::get('/todo/show/{id}',"TodoController@show");
+Route ::get('/todo/delete/{id}',"TodoController@delete");
